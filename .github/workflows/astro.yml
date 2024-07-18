@@ -64,7 +64,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Install dependencies
-        run: npm i
+        run: npm i && npm ci
         working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
         run: |
